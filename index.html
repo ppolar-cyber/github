@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Computacao em Nuvem</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg-dark: #0f172a;
+        --bg-soft: #1e293b;
+        --card: #ffffff;
+        --text-main: #0f172a;
+        --text-soft: #475569;
+        --line: #e2e8f0;
+        --accent-a: #0ea5e9;
+        --accent-b: #2563eb;
+        --accent-c: #22d3ee;
+      }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        padding: 32px 16px;
+        color: var(--text-main);
+        background:
+          radial-gradient(circle at 10% 15%, rgba(236, 72, 153, 0.25), transparent 35%),
+          radial-gradient(circle at 90% 10%, rgba(6, 182, 212, 0.22), transparent 35%),
+          radial-gradient(circle at 55% 90%, rgba(139, 92, 246, 0.2), transparent 38%),
+          linear-gradient(135deg, var(--bg-dark), var(--bg-soft));
+      }
+      .page {
+        max-width: 920px;
+        margin: 0 auto;
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 20px 45px rgba(2, 6, 23, 0.35);
+      }
+      header {
+        padding: 24px 24px 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background: linear-gradient(100deg, #020617 0%, #111827 45%, #1d4ed8 100%);
+        color: #ffffff;
+      }
+      header h1 {
+        margin: 0 0 6px;
+        font-size: 28px;
+        letter-spacing: -0.02em;
+      }
+      header p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.75);
+      }
+      main {
+        padding: 24px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 22px;
+      }
+      .hero img {
+        width: 100%;
+        border-radius: 14px;
+        display: block;
+        border: 1px solid var(--line);
+      }
+      .hero h2 {
+        margin: 0 0 10px;
+        font-size: 30px;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 0 0 16px;
+        line-height: 1.6;
+        color: var(--text-soft);
+      }
+      .cta {
+        border: 0;
+        border-radius: 999px;
+        padding: 11px 18px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        cursor: pointer;
+        background: linear-gradient(90deg, var(--accent-a), var(--accent-b), var(--accent-c));
+        box-shadow: 0 10px 24px rgba(14, 116, 144, 0.28);
+      }
+      h2 {
+        margin: 22px 0 10px;
+        font-size: 18px;
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        line-height: 1.7;
+        color: #374151;
+      }
+      li strong {
+        color: var(--text-main);
+      }
+      footer {
+        padding: 22px 24px 16px;
+        color: rgba(255, 255, 255, 0.84);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        background: linear-gradient(100deg, #020617 0%, #111827 45%, #1d4ed8 100%);
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-bottom: 14px;
+      }
+      .footer-box h3 {
+        margin: 0 0 8px;
+        font-size: 14px;
+        color: #ffffff;
+      }
+      .footer-box p,
+      .footer-box li {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.78);
+      }
+      .footer-box ul {
+        margin: 0;
+        padding-left: 16px;
+        color: rgba(255, 255, 255, 0.78);
+      }
+      .footer-bottom {
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.68);
+      }
+      @media (max-width: 760px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Computacao em Nuvem</h1>
+        <p>Um guia simples sobre como a nuvem funciona.</p>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <h2>O que e computacao em nuvem?</h2>
+            <p>
+              Computacao em nuvem e o uso de servidores, armazenamento, banco de dados e outros recursos
+              pela internet, sem depender apenas do computador local para executar tudo.
+            </p>
+            <button class="cta" type="button" onclick="window.location.href='segunda-pagina.html'">
+              Ver servicos em nuvem
+            </button>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
+            alt="Imagem representando tecnologia e computacao em nuvem"
+          />
+        </section>
+
+        <p>
+          Em vez de comprar toda a infraestrutura fisica, empresas e pessoas podem contratar recursos sob
+          demanda. Isso permite escalar sistemas rapidamente, reduzir custos iniciais e melhorar a
+          disponibilidade de aplicacoes e dados.
+        </p>
+
+        <h2>Exemplos do que voce encontra na computacao em nuvem</h2>
+        <ul>
+          <li><strong>IaaS</strong>: infraestrutura virtual como servidores e redes</li>
+          <li><strong>PaaS</strong>: plataforma para desenvolver e publicar aplicacoes</li>
+          <li><strong>SaaS</strong>: softwares prontos acessados pelo navegador</li>
+          <li><strong>Armazenamento</strong>: backup, arquivos e compartilhamento em escala</li>
+          <li><strong>Seguranca</strong>: controle de acesso, criptografia e monitoramento</li>
+        </ul>
+      </main>
+
+      <footer>
+        <div class="footer-grid">
+          <section class="footer-box">
+            <h3>Sobre o site</h3>
+            <p>
+              Este conteudo apresenta os conceitos essenciais de computacao em nuvem de forma objetiva para
+              estudo inicial.
+            </p>
+          </section>
+
+          <section class="footer-box">
+            <h3>Topicos principais</h3>
+            <ul>
+              <li>Modelos de servico: IaaS, PaaS e SaaS</li>
+              <li>Escalabilidade e disponibilidade</li>
+              <li>Boas praticas de seguranca na nuvem</li>
+            </ul>
+          </section>
+
+          <section class="footer-box">
+            <h3>Proximo passo</h3>
+            <p>
+              Continue estudando provedores como AWS, Azure e Google Cloud para entender servicos reais e
+              casos de uso.
+            </p>
+          </section>
+        </div>
+
+        <div class="footer-bottom">Site sobre computacao em nuvem - arquivo: index.html</div>
+      </footer>
+    </div>
+  </body>
+</html>
